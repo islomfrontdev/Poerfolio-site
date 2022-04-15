@@ -34,7 +34,8 @@ a {
   box-shadow: 2px 0px 10px -1px rgba(12, 18, 24, 0.75) !important;
 }
 
-.css-1l8j5k8 {
+.MuiDrawer-paperAnchorLeft,
+.MuiDrawer-paperAnchorDockedLeft {
   border-right: none !important;
   box-shadow: 2px 0px 10px -1px rgba(12, 18, 24, 0.75) !important;
 }
