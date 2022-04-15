@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #0f103f;
+  color: #fff;
 }
 
 a {
@@ -13,4 +19,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.btnBg {
+  background: linear-gradient(
+    281.25deg,
+    #2957a3 31.79%,
+    #c961de 98.74%
+  ) !important;
+  box-shadow: 0px 4.1875px 8.375px rgba(16, 19, 49, 0.15);
+  text-transform: capitalize;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  border-right: none;
+  box-shadow: 2px 0px 10px -1px rgba(12, 18, 24, 0.75);
 }
