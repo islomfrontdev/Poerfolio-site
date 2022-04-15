@@ -12,6 +12,7 @@ export default function FlexBox({ children, sx }) {
         },
         alignItems: "center",
         justifyContent: "space-around",
+        backgroundColor: "transparent",
         ...sx,
       }}
     >
