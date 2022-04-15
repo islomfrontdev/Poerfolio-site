@@ -179,11 +179,21 @@ export default function Sidebar({ children }) {
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer
+        variant="permanent"
+        open={open}
+        sx={{
+          boxShadow: "2px 0px 10px -1px rgba(12, 18, 24, 0.75)",
+          backgroundColor: "#0F103F",
+          borderRight: "none !important",
+          height: "100%",
+        }}
+      >
         <DrawerHeader
           sx={{
             backgroundColor: "primary.main",
             color: "#fff",
+            borderRight: "none",
           }}
         >
           <IconButton onClick={handleDrawerClose}>
@@ -205,9 +215,10 @@ export default function Sidebar({ children }) {
 
         <List
           sx={{
-            backgroundColor: "primary.main",
             height: "100%",
             color: "#fff",
+            backgroundColor: "primary.main",
+            borderRight: "none",
           }}
         >
           {navData.map((nav, index) => (
