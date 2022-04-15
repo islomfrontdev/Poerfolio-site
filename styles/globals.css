@@ -30,6 +30,6 @@ a {
   text-transform: capitalize;
 }
 .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
-  border-right: none;
-  box-shadow: 2px 0px 10px -1px rgba(12, 18, 24, 0.75);
+  border-right: none !important;
+  box-shadow: 2px 0px 10px -1px rgba(12, 18, 24, 0.75) !important;
 }

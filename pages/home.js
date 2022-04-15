@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React from "react";
 import FlexBox from "../src/components/FlexBox";
 import MainButton from "../src/components/MainButton";
@@ -10,7 +11,11 @@ export default function HomePage() {
         justifyContent: "space-around",
       }}
     >
-      <div>
+      <Box
+        sx={{
+          color: "#fff",
+        }}
+      >
         <MainTitle text="Islom Shakhobiddinov" />
         <MainTitle text="Frontend Engineer" />
         <MainButton
@@ -22,7 +27,7 @@ export default function HomePage() {
             Resume
           </a>
         </MainButton>
-      </div>
+      </Box>
       <img src="/img1.png" />
     </FlexBox>
   );
