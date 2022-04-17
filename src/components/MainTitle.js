@@ -10,8 +10,7 @@ export default function MainTitle({ text }) {
           sm: 25,
           md: 30,
         },
-        fontWeight: 700,
-        textTransform: "uppercase",
+        fontWeight: "bold",
       }}
     >
       {text}

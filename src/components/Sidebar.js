@@ -18,6 +18,7 @@ import { useRouter } from "next/router";
 import { AiFillHome, AiFillProject } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FaPhoneSquareAlt, FaBlogger } from "react-icons/fa";
+import Image from "next/image";
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -219,10 +220,12 @@ export default function Sidebar({ children }) {
             color: "#fff",
             backgroundColor: "primary.main",
             borderRight: "none",
+            mt: 12,
           }}
         >
           {navData.map((nav, index) => (
             <ListItemButton
+              onClick={() => router.push(nav.to)}
               key={index}
               sx={{
                 minHeight: 48,
