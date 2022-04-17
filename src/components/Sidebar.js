@@ -185,8 +185,6 @@ export default function Sidebar({ children }) {
         open={open}
         sx={{
           boxShadow: "2px 0px 10px -1px rgba(12, 18, 24, 0.75)",
-          backgroundColor: "#0F103F",
-          borderRight: "none !important",
           height: "100%",
         }}
       >
@@ -220,7 +218,7 @@ export default function Sidebar({ children }) {
             color: "#fff",
             backgroundColor: "primary.main",
             borderRight: "none",
-            mt: 12,
+            pt: 13,
           }}
         >
           {navData.map((nav, index) => (
