@@ -36,7 +36,7 @@ export default function HomePage() {
               fontWeight: "bold",
             }}
           >
-            I'm
+            I&apos;m
           </Typography>
           <Typewriter
             options={{
