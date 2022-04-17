@@ -56,6 +56,7 @@ const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
   zIndex: theme.zIndex.drawer + 1,
+  height: 60,
 
   transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
@@ -218,7 +219,7 @@ export default function Sidebar({ children }) {
             color: "#fff",
             backgroundColor: "primary.main",
             borderRight: "none",
-            pt: 13,
+            pt: 15,
           }}
         >
           {navData.map((nav, index) => (

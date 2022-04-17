@@ -6,6 +6,7 @@ export default function FlexBox({ children, sx }) {
     <Box
       sx={{
         display: "flex",
+        height: "calc(100vh - 60)",
         flexDirection: {
           xs: "column",
           md: "row",
